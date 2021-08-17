@@ -10,6 +10,10 @@ html {
     background: #104F75;
 }
 
+.page-title-header {
+  margin-top: -70px
+}
+
 .choice-title, .choice-body{
     color: white;
 }
@@ -85,11 +89,10 @@ html {
 }
 
 @media screen and (max-width: 625px) {
-  svg {
+  .svg-icon {
     display: none;
   }
 }
-
 
 .active {
   box-shadow: 0 -2px, 0 4px #0b0c0c;
