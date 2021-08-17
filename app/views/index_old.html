@@ -2,7 +2,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  GOV.UK Prototype Kit
+ Post-16 options
 {% endblock %}
 
 {% block content %}
@@ -72,354 +72,89 @@
         </aside>
     </div> 
   </div>
+ 
+<div class="govuk-grid-row">
+  
 
-  <div id="choices" class="govuk-grid-row">
-    <div class="govuk-grid-column-one-third">
      <h2 class="govuk-heading-l govuk-!-padding-top-9"> Options </h2> 
-    </div>
-      <a class="govuk-body-s" style="float:right; margin-top: 100px" id="showWithoutImages" href="#" onclick="ShowWithoutImages();return false;"> See these without images </a> 
-  </div>
-<div id="cardGroupWithImages" class="card-group">
-  <div class="govuk-grid-row">
-        
+
+
+{#  NO IMAGE CARDS  #}
+
 {# A-LEVELS CARD #}
-        
-    <div class="govuk-grid-column-one-third">
-      <a class="cards-link" href="#alevels">
-        <div class="card">
-          <div class="card__photo">
-          <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="a-levels stock image">
-          </div>
-            <h3 class="govuk-heading-s card__title">A-Levels</h3>
-            <p class="card__content">Brief description with more info about A-levels</p>
-          </div>
-      </a>
-    </div>
+  <div class="govuk-grid-column-one-third">
+  <div class="container">
+	<a class="post" href="alevels">
+			<h2 class="post-title govuk-heading-m">A-Levels</h2>
+      <p class="post-text">Advanced level qualifications (known as A levels) are subject-based qualifications that can lead to university, further study, training, or work.</p>
+	</a>
+</div>
+</div>
 
 {# APPRENTICESHIP CARD #}
-
-    <div class="govuk-grid-column-one-third">
-      <a class="cards-link" href="#apprenticeships">
-        <div class="card">
-          <div class="card__photo">
-          <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="a-levels stock image">
-          </div>
-            <h3 class="govuk-heading-s card__title">Apprenticeships</h3>
-            <p class="card__content">Brief description with more info about apprenticeships</p>
-          </div>
-      </a>
-    </div>
-
+   <div class="govuk-grid-column-one-third">
+   <div class="container">
+	<a class="post" href="apprenticeship">
+			<h2 class="post-title govuk-heading-m">Apprenticeship</h2>
+      <p class="post-text">Apprenticeships are for those aged 16 or over and combine working with studying to gain skills and knowledge in a specific job.
+</p>
+	</a>
+</div>
+</div>
 {# SUPPORTED INTERNSHIP CARD  #}
-
-    <div class="govuk-grid-column-one-third">
-      <a class="cards-link" href="/">
-        <div class="card">
-          <div class="card__photo">
-            <img src="https://images.unsplash.com/photo-1558929996-da64ba858215?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="a-levels stock image">
-          </div>
-            <h3 class="govuk-heading-s card__title">Supported internship</h3>
-            <p class="card__content">Brief description with more info about Supported internship</p>
-          </div>
-      </a>
-    </div>
+   <div class="govuk-grid-column-one-third">
+   <div class="container">
+	<a class="post" href="supportedinternship">
+			<h2 class="post-title govuk-heading-m">Supported Internship</h2>
+      <p class="post-text">Advanced level qualifications (known as A levels) are subject-based qualifications that can lead to university, further study, training, or work.</p>
+	</a>
+</div>
+</div>
 
 </div>
-    
-{# T-LEVELS CARD  #}
-<div class="govuk-grid-row">  
-    <div class="govuk-grid-column-one-third">
-      <a class="cards-link" href="/">
-        <div class="card">
-          <div class="card__photo">
-          <img src="https://images.unsplash.com/photo-1536809188428-e8ecf663d0be?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="a-levels stock image">
-          </div>
-            <h3 class="govuk-heading-s card__title">T-Levels</h3>
-            <p class="card__content">Brief description with more info about T-levels</p>
-          </div>
-      </a>
-    </div>
 
-        
+{# T-LEVELS CARD  #}
+
+<div class="govuk-grid-row">
+  
+
+  <div class="govuk-grid-column-one-third">
+   <div class="container">
+	<a class="post" href="tlevels">
+			<h2 class="post-title govuk-heading-m">T-Levels</h2>
+      <p class="post-text">T Levels are a new qualification for students aged 16 to 19 who’ve finished GCSEs. They are a 2-year qualification and the equivalent to 3 A levels.</p>
+	</a>
+</div>
+</div>
+
 {# TRAINEESHIP CARD  #}
 
-    <div class="govuk-grid-column-one-third">
-      <a class="cards-link" href="/">
-        <div class="card">
-          <div class="card__photo">
-          <img src="https://images.unsplash.com/photo-1541599540903-216a46ca1dc0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="a-levels stock image">
-          </div>
-            <h3 class="govuk-heading-s card__title">Traineeship</h3>
-            <p class="card__content">Brief description with more info about traineeship</p>
-          </div>
-      </a>
-    </div>
 
-    
+<div class="govuk-grid-column-one-third">
+<div class="container">
+	<a class="post" href="traineeship">
+			<h2 class="post-title govuk-heading-m">Traineeship</h2>
+      <p class="post-text">A traineeship is a skills development programme that includes a work placement that can last from 6 weeks up to 1 year.</p>
+	</a>
+</div>
+</div>
+
 {# Vocational Technical Qualifications (VTQs) CARD  #}
 
-    <div class="govuk-grid-column-one-third">
-      <a class="cards-link" href="/">
-        <div class="card">
-          <div class="card__photo">
-          <img src="https://images.unsplash.com/photo-1551717743-49959800b1f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="a-levels stock image">
-          </div>
-            <h3 class="govuk-heading-s card__title">Vocational Technical Qualifications (VTQs)</h3>
-            <p class="card__content">Brief description with more info about Vocational Technical Qualifications (VTQs)</p>
-          </div>
-      </a>
-    </div>
-  </div>
-</div>
-
-<div id="cardGroupNoImages" class="govuk-grid-row card-group-no-images">
-
   <div class="govuk-grid-column-one-third">
-      <a class="cards-link" href="#alevels">
-        <div class="card">        
-            <h3 style="padding-left:10px; padding-top: 20px" class="govuk-heading-s card__title">A-Levels</h3>
-            <p style="padding-left:20px; padding-bottom:20px" class="card__content">Brief description with more info about A-levels</p>
-          </div>
-      </a>
-    </div>
-
-      <div class="govuk-grid-column-one-third">
-      <a class="cards-link" href="#apprenticeships">
-        <div class="card">        
-            <h3 style="padding-left:10px; padding-top: 20px" class="govuk-heading-s card__title">Apprenticeships</h3>
-            <p style="padding-left:20px; padding-bottom:20px" class="card__content">Brief description with more info about apprenticeships</p>
-          </div>
-      </a>
-    </div>
-
-     <div class="govuk-grid-column-one-third">
-      <a class="cards-link" href="#supportedintern">
-        <div class="card">        
-            <h3 style="padding-left:10px; padding-top: 20px" class="govuk-heading-s card__title">Supported Internship</h3>
-            <p style="padding-left:20px; padding-bottom:20px" class="card__content">Brief description with more info about supported internship</p>
-          </div>
-      </a>
-    </div>
-
- <div class="govuk-grid-column-one-third">
-      <a class="cards-link" href="#tlevels">
-        <div class="card">        
-            <h3 style="padding-left:10px; padding-top: 20px" class="govuk-heading-s card__title">T-Levels</h3>
-            <p style="padding-left:20px; padding-bottom:20px" class="card__content">Brief description with more info about T-levels</p>
-          </div>
-      </a>
-    </div>
-
-      <div class="govuk-grid-column-one-third">
-      <a class="cards-link" href="#traineeship">
-        <div class="card">        
-            <h3 style="padding-left:10px; padding-top: 20px" class="govuk-heading-s card__title">Traineeship</h3>
-            <p style="padding-left:20px; padding-bottom:20px" class="card__content">Brief description with more info about Traineeship</p>
-          </div>
-      </a>
-    </div>
-
-     <div class="govuk-grid-column-one-third">
-      <a class="cards-link" href="#vtq">
-        <div class="card">        
-            <h3 style="padding-left:10px; padding-top: 20px" class="govuk-heading-s card__title">Vocational Technical Qualifications (VTQs)</h3>
-            <p style="padding-left:20px; padding-bottom:20px" class="card__content">Brief description with more info about Vocational Technical Qualifications (VTQs)</p>
-          </div>
-      </a>
-    </div>
-{#   
-  
-  <div class="govuk-grid-column-one-third">
-    <a class="cards-link" href="/">
-      <div class="card">
-        <h3 class="govuk-heading-s">A-Levels</h3>
-        <p class="govuk-body-m">PLace holder text </p>
-      </div>
-    </a>
-  </div>
-
-
-    <div class="govuk-grid-column-one-third">
-    <a class="cards-link" href="/">
-      <div class="card">
-        <h3 class="govuk-heading-s">Apprenticeships</h3>
-        <p class="govuk-body-m">PLace holder text </p>
-      </div>
-    </a>
-  </div> #}
-  
-</div>
-
-
-
-<div class="govuk-grid-row choice-header govuk-!-padding-top-9 govuk-!-padding-bottom-9"> 
- <div class="govuk-grid-column-two-thirds">
-    <h2 id="alevels" class="govuk-heading-l choice-title">
-    A-Levels
-  </h2>
-</div>
-<div class="govuk-grid-column-one-third">
-  <a class="govuk-body choice-link govuk-padding-top-9"  href="#choices"> Back to choices </a>
-</div>
-<div class="govuk-grid-column-full">
-    <p class="choice-body"> Quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.Quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
-</div>
-</div>
-  
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-one-third">
-    <div class="govuk-grid-column-two-thirds">
-      <h3 class="govuk-heading-m"> Eligibility </h3>
-    </div>
-    <div class="govuk-grid-column-one-third">
-    <img src="xx" width="20px"> 
-    </div>
-    <p>
-    <br>
-    <br>Quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor.
-    </p>
-  </div>
-
-  <div class="govuk-grid-column-one-third">
-    <div class="govuk-grid-column-two-thirds">
-      <h3 class="govuk-heading-m"> Funding </h3>
-    </div>
-    <div class="govuk-grid-column-one-third">
-    <img src="xx" width="20px"> 
-    </div>
-      <p>
-    <br>
-    <br>Quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor.
-    </p>
-  </div>
-
-  <div class="govuk-grid-column-one-third">
-    <div class="govuk-grid-column-two-thirds">
-      <h3 class="govuk-heading-m"> Timings </h3>
-    </div>
-    <div class="govuk-grid-column-one-third">
-    <img src="xx" width="20px"> 
-    </div>
-      <p>
-    <br>
-    <br>Quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor.
-    </p>
-  </div>
-</div> 
-
-
-<div class="govuk-grid-row">
-<div class="govuk-grid-column-two-thirds">
-  <h2 class="govuk-heading-m govuk-!-padding-top-7"> 
-  Subheading
-  </h2>
-  <p> Quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
-  <p> Quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
-
- <h2 class="govuk-heading-m govuk-!-padding-top-7"> 
-  Subheading
-  </h2>
-  <p> Quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
-  <p> Quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
-
-
-
- <h2 class="govuk-heading-m govuk-!-padding-top-7"> 
-  Subheading
-  </h2>
-  <p> Quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
-  <p> Quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
-
+   <div class="container">
+	<a class="post" href="vtq">
+			<h2 class="post-title govuk-heading-m">Vocational Technical Qualifications (VTQs)</h2>
+      <p class="post-text">Vocational qualifications are work-related qualifications available in a wide range of career areas.</p> 
+	</a>
 </div>
 </div>
 
-
-
-<div class="govuk-grid-row govuk-!-padding-top-9 govuk-!-padding-bottom-9"> 
- <div class="govuk-grid-column-two-thirds">
-    <h2 id="apprenticeships" class="govuk-heading-l">
-    Apprenticeships
-  </h2>
-</div>
-<div class="govuk-grid-column-one-third">
-  <a style="margin-top: 30px" href="#choices"> Back to choices </a>
-</div>
-<div class="govuk-grid-column-full">
-    <p> Quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.Quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
 </div>
 
 </div>
-  
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-one-third">
-    <div class="govuk-grid-column-two-thirds">
-      <h3 class="govuk-heading-m"> Eligibility </h3>
-    </div>
-    <div class="govuk-grid-column-one-third">
-    <img src="xx" width="20px"> 
-    </div>
-    <p>
-    <br>
-    <br>Quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor.
-    </p>
-  </div>
-
-  <div class="govuk-grid-column-one-third">
-    <div class="govuk-grid-column-two-thirds">
-      <h3 class="govuk-heading-m"> Funding </h3>
-    </div>
-    <div class="govuk-grid-column-one-third">
-    <img src="xx" width="20px"> 
-    </div>
-      <p>
-    <br>
-    <br>Quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor.
-    </p>
-  </div>
-
-  <div class="govuk-grid-column-one-third">
-    <div class="govuk-grid-column-two-thirds">
-      <h3 class="govuk-heading-m"> Timings </h3>
-    </div>
-    <div class="govuk-grid-column-one-third">
-    <img src="xx" width="20px"> 
-    </div>
-      <p>
-    <br>
-    <br>Quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor.
-    </p>
-  </div>
-</div> 
 
 
-<div class="govuk-grid-row">
-<div class="govuk-grid-column-two-thirds">
-  <h2 class="govuk-heading-m govuk-!-padding-top-7"> 
-  Subheading
-  </h2>
-  <p> Quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
-  <p> Quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
-
- <h2 class="govuk-heading-m govuk-!-padding-top-7"> 
-  Subheading
-  </h2>
-  <p> Quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
-  <p> Quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
-
-
- <h2 class="govuk-heading-m govuk-!-padding-top-7"> 
-  Subheading
-  </h2>
-  <p> Quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
-  <p> Quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
-
-</div>
-</div>
-
-
-
-
-</div>
 
 
 
@@ -427,35 +162,3 @@
 
 
 
-
-
-
-
-
-{% block scripts %}
-
-<script>
-
-function ShowWithoutImages() {
-  var cardWithImage = document.getElementById("cardGroupWithImages");
-  var linkTitle = document.getElementById("showWithoutImages");
-  var cardNoImage = document.getElementById("cardGroupNoImages");
-
-  if (cardWithImage.style.display === "none") {
-    cardWithImage.style.display = "block";
-    cardNoImage.style.display = "none";
-    linkTitle.innerHTML = 'See these without images';
-  } else {
-    cardWithImage.style.display = "none";
-    cardNoImage.style.display = "block";
-    linkTitle.innerHTML = 'See these with images';
-  }
-  
-} 
-
-
-</script>
-{% endblock %}
-
-
-<span class="govuk-visually-hidden"></span>
